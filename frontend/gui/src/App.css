@@ -1,0 +1,15 @@
+.min-h-100{
+    min-height: 100vh;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}

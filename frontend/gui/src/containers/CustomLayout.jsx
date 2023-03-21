@@ -7,7 +7,7 @@ const CustomLayout = props => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout>
+    <Layout className='d-flex flex-column justify-content-between min-h-100'>
       <Header
         style={{
           position: 'sticky',
@@ -44,7 +44,7 @@ const CustomLayout = props => {
           textAlign: 'center',
         }}
       >
-        Контакты:
+        Contacts:
       </Footer>
     </Layout>
   );

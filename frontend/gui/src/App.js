@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import 'antd/dist/reset.css'
-import CustomLayout from './containers/Layout';
-import MainContent from './components/MainContent';
+import CustomLayout from './containers/CustomLayout';
+import MainLayout from './containers/MainLayout';
 
 const App = () => {
   return (
     <CustomLayout>
-      <MainContent />
+      <MainLayout />
     </CustomLayout>
   );
 };
