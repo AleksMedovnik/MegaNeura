@@ -1,5 +1,6 @@
-import { Layout, theme } from 'antd';
+import { Layout, theme, Typography } from 'antd';
 const { Header, Content, Footer } = Layout;
+const { Link } = Typography;
 
 
 const CustomLayout = props => {
@@ -44,7 +45,11 @@ const CustomLayout = props => {
           textAlign: 'center',
         }}
       >
-        Contacts:
+        <Link 
+          href="https://github.com/AleksMedovnik/MegaNeura" 
+          target="_blank">
+          GitHub
+        </Link>
       </Footer>
     </Layout>
   );

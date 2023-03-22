@@ -8,7 +8,7 @@ const LangList = props => (
     dataSource={props.data}
     renderItem={item => (
       <List.Item>
-		<LangInfo item = {item} />
+		    <LangInfo item = {item} />
       </List.Item>
     )}
   />
