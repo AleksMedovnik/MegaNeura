@@ -2,6 +2,7 @@ import {
     Button,
     Cascader,
     Form,
+    Select
   } from 'antd';
   import { useState } from 'react';
 
@@ -11,10 +12,9 @@ import {
     const onFormLayoutChange = ({ size }) => {
       setComponentSize(size);
     };
-    const handleFormSubmit = event => {
-      const title = event.target.elements.title.value
-      console.log(title)
-    }
+    const onFinish = (values) => {
+      console.log(values);
+    };
     return (
       <Form
         labelCol={{
@@ -32,118 +32,87 @@ import {
         style={{
           maxWidth: 1300,
         }}
-        onSubmitCapture={handleFormSubmit}
+        onFinish={onFinish}
       >
-        <Form.Item label="Country">
+        <Form.Item label="Страна" name='country'>
           <Cascader
-            name='title'
             options={[
               {
                 value: 'russia',
-                label: 'Russia',
-              },
-              {
-                value: 'ukraine',
-                label: 'Ukraine',
+                label: 'Россия',
+                children: [
+                  {
+                    value: 'moscow',
+                    label: 'Москва',
+                  },
+                  {
+                    value: 'petersburg',
+                    label: 'Санкт-Петербург',
+                  },
+                  {
+                    value: 'krasnodar',
+                    label: 'Краснодар',
+                  },
+                  {
+                    value: 'rostov',
+                    label: 'Ростов-на-Дону',
+                  },
+                ],
               },
               {
                 value: 'belarus',
                 label: 'Belarus',
+                children: [
+                  {
+                    value: 'brest',
+                    label: 'Брест',
+                  },
+                  {
+                    value: 'vitebsk',
+                    label: 'Витебск',
+                  },
+                  {
+                    value: 'gomel',
+                    label: 'Гомель',
+                  },
+                  {
+                    value: 'minsk',
+                    label: 'Минск',
+                  },
+                ],
               },
               {
                 value: 'georgia',
                 label: 'Georgia', 
-              },
-              {
-                value: 'kazakhstan',
-                label: 'Kazakhstan', 
-              },
-              {
-                value: 'azerbaijan',
-                label: 'Azerbaijan', 
+                children: [
+                  {
+                    value: 'batumi',
+                    label: 'Батуми',
+                  },
+                  {
+                    value: 'borjomi',
+                    label: 'Боржоми',
+                  },
+                  {
+                    value: 'tbilisi',
+                    label: 'Тбилиси',
+                  },
+                  {
+                    value: 'chiatura',
+                    label: 'Чиатура',
+                  },
+                ],
               },
             ]}
           />
         </Form.Item>
-        <Form.Item label="Programming language">
-          <Cascader
-            options={[
-              {
-                value: 'javascript',
-                label: 'JavaScript',
-                children: [
-                  {
-                    value: 'react',
-                    label: 'React',
-                  },
-                  {
-                    value: 'angular',
-                    label: 'Angular',
-                  },
-                  {
-                    value: 'vue',
-                    label: 'Vue.js',
-                  },
-                  {
-                    value: 'node',
-                    label: 'Node.js',
-                  },
-                ],
-              },
-              {
-                value: 'python',
-                label: 'Python',
-                children: [
-                  {
-                    value: 'backend',
-                    label: 'Backend',
-                  },
-                  {
-                    value: 'all',
-                    label: 'Show all',
-                  },
-                ],
-              },
-              {
-                value: 'c_sharp',
-                label: 'C#',
-                children: [
-                  {
-                    value: 'unity',
-                    label: 'Unity',
-                  },
-                  {
-                    value: 'dot_net',
-                    label: '.net ',
-                  },
-                ],
-              },
-              {
-                value: 'go',
-                label: 'Go',
-              },
-              {
-                value: 'java',
-                label: 'Java',
-              },
-              {
-                value: 'cpp',
-                label: 'C++',
-              },
-              {
-                value: 'kotlin',
-                label: 'Kotlin',
-              },
-              {
-                value: 'swift',
-                label: 'Swift',
-              },
-              {
-                value: 'rust',
-                label: 'Rust',
-              },
-            ]}
-          />
+        <Form.Item label="Тип занятости" name='type_employment'>
+          <Select>
+            <Select.Option value="full">Полная занятость</Select.Option>
+            <Select.Option value="remote">Удаленная работа</Select.Option>
+            <Select.Option value="part_time">Частичная занятость</Select.Option>
+            <Select.Option value="project_work">Проектная работа</Select.Option>
+          </Select>
         </Form.Item>
         <Form.Item label="Search">
           <Button type="primary" htmlType="submit">Search</Button>
