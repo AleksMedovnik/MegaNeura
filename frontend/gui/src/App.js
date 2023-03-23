@@ -1,5 +1,5 @@
-import './App.css';
 import 'antd/dist/reset.css'
+import './App.css';
 import CustomLayout from './containers/CustomLayout';
 import MainLayout from './containers/MainLayout';
 

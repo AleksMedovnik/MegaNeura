@@ -60,7 +60,7 @@ const FormFilter = props => {
             },
             {
               value: 'belarus',
-              label: 'Belarus',
+              label: 'Беларусь',
               children: [
                 {
                   value: 'brest',
@@ -82,7 +82,7 @@ const FormFilter = props => {
             },
             {
               value: 'georgia',
-              label: 'Georgia', 
+              label: 'Грузия', 
               children: [
                 {
                   value: 'batumi',

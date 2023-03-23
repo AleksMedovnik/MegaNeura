@@ -4,7 +4,7 @@ import { Card, Col, Row, Statistic } from 'antd';
 const StaticticVacancies = props => (
   <Row gutter={16}>
     <Col span={24}>
-      <Card bordered={false}>
+      <Card bordered={false} className='lang__statictic'>
 
       {
 
