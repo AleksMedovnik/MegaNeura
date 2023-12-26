@@ -3,7 +3,7 @@ import dragonfly from "../images/dragonfly.gif"
 
 const Welcome = () => {
     return (
-        <div className="text-center">
+        <div className="text-center font-bold">
             <h1>Hello, my friend!</h1>
             <img src={dragonfly} alt="MegaNeura" />
             <h2>My name's Meganeura!</h2>

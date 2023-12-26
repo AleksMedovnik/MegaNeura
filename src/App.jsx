@@ -1,6 +1,6 @@
 import './App.css';
-import 'antd/dist/reset.css'
-import BaseRouter from './store/router';
+// import 'antd/dist/reset.css'
+import BaseRouter from './router';
 
 const App = () => {
     return (
