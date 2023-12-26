@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/MegaNeura/static/css/main.1aabdc74.css",
+    "main.js": "/MegaNeura/static/js/main.245f3149.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/dragonfly.gif": "/MegaNeura/static/media/dragonfly.9884f88f5a158fcdf1db.gif",
+    "static/media/image-example.JPG": "/MegaNeura/static/media/image-example.2519f470d5a33bacf288.JPG",
+    "static/media/neucha-v17-latin-regular.woff2": "/MegaNeura/static/media/neucha-v17-latin-regular.252c1be327d81ca97242.woff2",
+    "index.html": "/MegaNeura/index.html",
+    "main.1aabdc74.css.map": "/MegaNeura/static/css/main.1aabdc74.css.map",
+    "main.245f3149.js.map": "/MegaNeura/static/js/main.245f3149.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1aabdc74.css",
+    "static/js/main.245f3149.js"
+  ]
+}
