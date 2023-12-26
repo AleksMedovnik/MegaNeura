@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+/* neucha-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/neucha-v17-latin-regular.woff2') format('woff2');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Neucha';
+    font-style: normal;
+    background: rgb(212, 218, 155);
+    color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+    margin-bottom: 5px;
+    line-height: 130%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.m-auto {
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.mb-10 {
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mb-5 {
+    margin-bottom: 10px;
+}
+
+.mw-1350 {
+    max-width: 1350px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.border-solid-1 {
+    border: 1px solid gray;
+}
+
+.game {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    background-image: url("./images/image-example.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.run {
+    background: green;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.link {
+    padding: 10px 15px;
+    background: rgb(101, 61, 220);
+    color: antiquewhite;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
 }
