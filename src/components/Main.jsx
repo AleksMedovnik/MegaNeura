@@ -2,7 +2,7 @@
 const Main = () => {
     return (
         <div className="text-center">
-            <h1>Hello!</h1>
+            <h1>Эта страница еще не готова</h1>
         </div>
     )
 }
