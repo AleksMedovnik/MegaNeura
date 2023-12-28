@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/MegaNeura/static/css/main.07cbca37.css",
-    "main.js": "/MegaNeura/static/js/main.86effef6.js",
+    "main.css": "/MegaNeura/static/css/main.1c18e431.css",
+    "main.js": "/MegaNeura/static/js/main.d99fb435.js",
     "static/js/787.9e9f4ffd.chunk.js": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js",
     "static/media/dragonfly.gif": "/MegaNeura/static/media/dragonfly.9884f88f5a158fcdf1db.gif",
     "static/media/bg.jpg": "/MegaNeura/static/media/bg.c5bd678f9ab78b8c2142.jpg",
     "static/media/image-example.JPG": "/MegaNeura/static/media/image-example.2519f470d5a33bacf288.JPG",
     "static/media/neucha-v17-latin-regular.woff2": "/MegaNeura/static/media/neucha-v17-latin-regular.252c1be327d81ca97242.woff2",
+    "static/media/roboto-v30-latin-700.woff2": "/MegaNeura/static/media/roboto-v30-latin-700.227c93190fe7f82de3f8.woff2",
+    "static/media/roboto-v30-latin-regular.woff2": "/MegaNeura/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
     "index.html": "/MegaNeura/index.html",
-    "main.07cbca37.css.map": "/MegaNeura/static/css/main.07cbca37.css.map",
-    "main.86effef6.js.map": "/MegaNeura/static/js/main.86effef6.js.map",
+    "main.1c18e431.css.map": "/MegaNeura/static/css/main.1c18e431.css.map",
+    "main.d99fb435.js.map": "/MegaNeura/static/js/main.d99fb435.js.map",
     "787.9e9f4ffd.chunk.js.map": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07cbca37.css",
-    "static/js/main.86effef6.js"
+    "static/css/main.1c18e431.css",
+    "static/js/main.d99fb435.js"
   ]
 }
