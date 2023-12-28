@@ -1,6 +1,3 @@
-import { Input, Form, Button } from 'antd';
-const { TextArea } = Input;
-
 const levels = [
     {
         intro: (
