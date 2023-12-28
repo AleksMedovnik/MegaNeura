@@ -1,23 +1,76 @@
 /* neucha-regular - latin */
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Neucha';
     font-style: normal;
     font-weight: 400;
     src: url('./fonts/neucha-v17-latin-regular.woff2') format('woff2');
 }
 
-body {
-    font-family: 'Neucha';
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
     font-style: normal;
-    background-image: url("./images/bg.jpg");
-    background-attachment: fixed;
-    background-position: center;
+    font-weight: 400;
+    src: url('./fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --scrollbarBg: rgb(139, 143, 141);
+    --scrollbarThumb: rgba(224, 217, 217, 0.8);
+    --scrollbarWidth: 8px;
+    --scrollbarBorder: 3px solid var(--scrollbarBg);
+    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+
+.container {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+
+.container::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+}
+
+.container::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+}
+
+body {
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
 }
 
 p {
-    margin-bottom: 5px;
+    padding-bottom: 10px;
     line-height: 130%;
 }
 
@@ -30,7 +83,7 @@ p {
 }
 
 .mb-5 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .mw-1350 {
@@ -41,20 +94,69 @@ p {
     width: 100%;
 }
 
+.vh-100 {
+    height: 100vh;
+}
+
+.h-auto {
+    height: 100%;
+}
+
 .d-flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-start {
+    align-items: flex-start;
 }
 
 .gap-10 {
     gap: 10px;
 }
 
-.p-10 {
+.pd-10 {
     padding: 10px;
+}
+
+.pd-side-10 {
+    padding: 0 10px;
 }
 
 .text-center {
     text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-neucha {
+    font-family: 'Neucha';
+}
+
+.font-roboto {
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
 .font-20 {
@@ -67,6 +169,46 @@ p {
 
 .border-solid-1 {
     border: 1px solid gray;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.bg-mask-8 {
+    background: rgba(251, 248, 248, 0.8);
+}
+
+.bg-mask-3 {
+    background: rgba(251, 248, 248, 0.311);
+}
+
+.bg-space {
+    background-image: url("./images/bg.jpg");
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.input {
+    resize: none !important;
+}
+
+.bg-green {
+    background: rgb(18, 229, 92);
 }
 
 .game {
@@ -91,4 +233,20 @@ p {
     border-radius: 5px;
     display: block;
     text-decoration: none;
+}
+
+.message-note {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .message-note {
+        display: flex;
+    }
 }
