@@ -1,14 +1,21 @@
 import { connect } from "react-redux"
 import Basic from "../components/Basic"
+import { checkResultAC } from '../store/actionCreators/basic'
 
 const mapStateToProps = state => {
     return {
-        level: state.basic.level,
-        intro: state.basic.data.intro,
-        theory: state.basic.data.theory,
-        task: state.basic.data.task,
-        formInput: state.basic.data.formInput,
+        theory: state.basic.theory,
+        form: state.basic.form,
+        canvas: state.basic.canvas,
     }
 }
 
-export default connect(mapStateToProps, {})(Basic)
+const mapDispatchToProps = dispatch => {
+    return {
+        checkResult(value){
+            dispatch(checkResultAC(value))    
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Basic)

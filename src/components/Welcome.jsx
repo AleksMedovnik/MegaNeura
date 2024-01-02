@@ -5,23 +5,23 @@ const Welcome = () => {
     return (
         <div className="text-center font-neucha font-bold font-20 bg-center bg-fixed bg-space bg-cover">
             <div className="bg-mask-3">
-                <h1>Hello, my friend!</h1>
+                <h1>Привет, мой друг!</h1>
                 <img src={dragonfly} alt="MegaNeura" />
-                <h2>My name's MegaNeura!</h2>
+                <h2>Меня зовут MegaNeura!</h2>
                 <p>
-                    I am a giant prehistoric dragonfly! I lived on Earth about 300 million years ago. People think I'm extinct, but actually, I just moved to another planet! My new home is the planet Gliese 581 c. It's very hot, but it's the right climate for me. It's 20 light years away from Earth. Imagine that! If you travel at the speed of light, it takes 20 years to reach my planet.
+                    Я - гигантская доисторическая стрекоза! Я жила на Земле около 300 миллионов лет назад. Люди думают, что я вымерла, но на самом деле я просто переехала на другую планету! Мой новый дом - планета Gliese 581 c. Там очень жарко, но мне такой климат подходит. Она находится на расстоянии 20 световых лет от Земли. Представляешь? Если лететь со скоростью света, то до моей планеты можно добраться за 20 лет.
                 </p>
                 <p>
-                    I've come all this way to teach you the new technologies my planet's inhabitants have.
+                    Я проделала такой долгий путь, чтобы научить тебя новым технологиям, которыми владеют жители моей планеты.
                 </p>
                 <p>
-                    Let's start by learning programming languages. These are languages that are not spoken or messaged, but are used to write computer programs!
+                    Давай начнем с изучения языков программирования. Это языки, на которых не говорят и не переписываются в мессенджерах, а разрабатывают компьютерные программы!
                 </p>
                 <p>
-                    If you're ready, then...
+                    Если ты готов, то...
                 </p>
                 <p>
-                    <NavLink to="/trainer" className="link">Let's go!</NavLink>
+                    <NavLink to="/trainer" className="link">Поехали!</NavLink>
                 </p>
             </div>
         </div>
