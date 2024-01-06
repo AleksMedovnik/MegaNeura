@@ -17,7 +17,7 @@ const Basic = props => {
                     </div>
                 </div>
             </div>
-            <div className="pd-side-10">
+            <div className="pd-side-10 overflow-y-auto container">
                 {props.canvas}
                 <form onSubmitCapture={checkResult}>
                     {props.form}
