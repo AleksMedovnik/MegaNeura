@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MegaNeura/static/css/main.8ebe9794.css",
-    "main.js": "/MegaNeura/static/js/main.31015d7e.js",
+    "main.js": "/MegaNeura/static/js/main.b9cfc5a9.js",
     "static/js/787.9e9f4ffd.chunk.js": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js",
     "static/media/dragonfly.gif": "/MegaNeura/static/media/dragonfly.9884f88f5a158fcdf1db.gif",
     "static/media/bg.jpg": "/MegaNeura/static/media/bg.c5bd678f9ab78b8c2142.jpg",
@@ -13,11 +13,11 @@
     "static/media/roboto-v30-latin-regular.woff2": "/MegaNeura/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
     "index.html": "/MegaNeura/index.html",
     "main.8ebe9794.css.map": "/MegaNeura/static/css/main.8ebe9794.css.map",
-    "main.31015d7e.js.map": "/MegaNeura/static/js/main.31015d7e.js.map",
+    "main.b9cfc5a9.js.map": "/MegaNeura/static/js/main.b9cfc5a9.js.map",
     "787.9e9f4ffd.chunk.js.map": "/MegaNeura/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ebe9794.css",
-    "static/js/main.31015d7e.js"
+    "static/js/main.b9cfc5a9.js"
   ]
 }
